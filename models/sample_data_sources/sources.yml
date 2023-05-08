@@ -1,0 +1,61 @@
+version: 2
+
+sources:
+  - name: sample_b2b_data
+    database: STEVE_D_RAW_DATA  
+    schema: SAMPLE_B2B_SALES_DATA  
+    tables:
+      - name: customer_sales_table
+        description: Table containing order information for a b2b business
+        identifier: customer_sales_table
+        columns:
+          - name: ordernumber
+            description: Unique identifier for the order.
+          - name: quantityordered
+            description: The quantity of the ordered product.
+          - name: priceeach
+            description: The price of each item in the order.
+          - name: orderlinenumber
+            description: The line number of the item in the order.
+          - name: sales
+            description: The total sales amount for the order.
+          - name: orderdate
+            description: The date the order was placed.
+          - name: status
+            description: The status of the order (e.g. shipped, cancelled, etc.)
+          - name: qtr_id
+            description: The quarter of the year in which the order was placed.
+          - name: month_id
+            description: The month of the year in which the order was placed.
+          - name: year_id
+            description: The year in which the order was placed.
+          - name: productline
+            description: The product line of the ordered item.
+          - name: msrp
+            description: The manufacturers suggested retail price of the ordered item.
+          - name: productcode
+            description: The code of the ordered item.
+          - name: customername
+            description: The name of the customer who placed the order.
+          - name: phone
+            description: The phone number of the customer who placed the order.
+          - name: addressline1
+            description: The first line of the customers address.
+          - name: addressline2
+            description: The second line of the customers address.
+          - name: city
+            description: The city of the customers address.
+          - name: state
+            description: The state or province of the customers address.
+          - name: postalcode
+            description: The postal code or ZIP code of the customers address.
+          - name: country
+            description: The country of the customers address.
+          - name: territory
+            description: The sales territory of the ordered item.
+          - name: contactlastname
+            description: The last name of the contact person for the customer.
+          - name: contactfirstname
+            description: The first name of the contact person for the customer.
+          - name: dealsize
+            description: The size of the deal (e.g. small, medium, large).
