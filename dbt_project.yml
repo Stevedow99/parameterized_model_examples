@@ -20,8 +20,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 vars:
   # The `start_date` variable will be accessible in all resources
-  customer_name: none
-  customer_country_name: none
+  customer_name: "{{env_var('DBT_CUSTOMER_NAME', 'NONE')}}"
+  customer_country_name: "{{env_var('DBT_CUSTOMER_COUNTRY_NAME', 'NONE')}}"
 
 
 models:
